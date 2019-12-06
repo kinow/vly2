@@ -266,7 +266,7 @@ class OrgDetailForm extends Component {
                 <h3>Contact Details</h3>
               </TitleContainer>
               <p>
-                How do you want teachers and schools to get in touch with you?
+                How do you want the public to get in touch with you? Groups with contact details usually attract more attention
               </p>
             </DescriptionContainer>
             <InputContainer>
@@ -305,6 +305,10 @@ class OrgDetailForm extends Component {
             </InputContainer>
           </FormGrid>
           <Divider />
+          {(getFieldValue('category') || []).includes(OrganisationCategory.BUSINESS)
+            ? (
+              <>
+
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
@@ -400,7 +404,7 @@ class OrgDetailForm extends Component {
                 <h3>Public Section</h3>
               </TitleContainer>
               <p>
-                How do you want teachers and schools to get in touch with you?
+                How do you want the public to get in touch with you?
               </p>
             </DescriptionContainer>
             <InputContainer>
@@ -415,6 +419,8 @@ class OrgDetailForm extends Component {
             </InputContainer>
           </FormGrid>
           <Divider />
+          </>)
+            : null}
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
@@ -496,7 +502,7 @@ class OrgDetailForm extends Component {
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
-                <h3>Confirm</h3>
+                <h3>Confirm Details</h3>
               </TitleContainer>
               <p>Check before you go</p>
             </DescriptionContainer>

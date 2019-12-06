@@ -277,14 +277,13 @@ class OpDetailForm extends Component {
                 defaultMessage='Create'
               />
             )}{' '}
-            a request
+           a request
           </h1>
           <h5>
             <FormattedMessage
               id='opdetail.pagesubtitle'
               description='subTitle for creating Ops'
-              defaultMessage='Ask volunteers for assistance with anything related to tech - there
-                are (get number) of volunteers looking for opportunities to help out'
+              defaultMessage='Ask volunteers to help out with your activity - The more you tell volunteers on this form, the more likely they are to help'
             />
           </h5>
         </PageTitle>
@@ -293,10 +292,11 @@ class OpDetailForm extends Component {
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
-                <h3>What are you looking for?</h3>
+                <h3>What help are you looking for?</h3>
               </TitleContainer>
               <p>
-                Before our skilled volunteers get involved, they need to know
+                Tell us what you want to do, and we'll recruit skilled volunteers to help you out.
+                                But before our awesome volunteers get involved, they need to know
                 how they can help. Add a title and description that tell
                 volunteers how they can help you.
               </p>
@@ -349,7 +349,7 @@ class OpDetailForm extends Component {
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
-                <h3>Do you need any specific skills? (optional)</h3>
+                <h3>Are you looking for specific skills? (optional)</h3>
               </TitleContainer>
               <p>
                 Does what you're asking for fit into any specific categories

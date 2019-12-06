@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import IdLine from './IdLine'
 import { Divider } from 'antd'
 import { FormattedMessage } from 'react-intl'
+import IDSubtitle from './IDSubtitle'
 /* These are used to create small lists of properties for
   orgs, ops and acts in their details pages
 */
@@ -100,6 +101,9 @@ export const ItemIdLine = ({ item, path }) =>
   <ItemListing>
     <IdLine item={item} path={path} />
   </ItemListing>
+
+
+export const OrgIdLine = ({ item, path }) => <IDSubtitle item={item} path={path} />
 
 export const ItemDate = ({ startDate, endDate }) =>
   <ItemListing>

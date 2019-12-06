@@ -23,10 +23,12 @@ import {
   ItemImage
 } from '../VTheme/ItemList'
 import { Role } from '../../server/services/authorize/role'
+import IDSubtitle from '../VTheme/IDSubtitle'
 
-export function ActDetail ({ act, me }) {
+export function ActDetail ({ act, me, canEdit }) {
   const img = act.imgUrl || '/static/missingimage.svg'
   const isOP = me && me.role.includes(Role.OPPORTUNITY_PROVIDER)
+  
   return (
     <>
       <Head>
@@ -38,7 +40,7 @@ export function ActDetail ({ act, me }) {
         </Left>
         <Right>
           <h1>{act.name}</h1>
-          <ItemIdLine item={act.offerOrg} path='orgs' />
+          <IDSubtitle item={act.offerOrg} path='orgs' />
           <ItemContainer>
             <ItemDuration duration={act.duration} />
             <ItemVolunteers volunteers={act.volunteers} />
@@ -47,6 +49,14 @@ export function ActDetail ({ act, me }) {
           </ItemContainer>
           <Divider />
           {isOP && <Button size='large' shape='round' type='primary' href={`/op/new?act=${act._id}`}>Run Activity</Button>}
+          {canEdit &&
+              <Button
+                id='editActBtn' style={{ float: 'right' }}
+                type='primary' shape='round'
+                onClick={() => this.setState({ editing: true })}
+              >
+                <FormattedMessage id='act.edit' defaultMessage='Edit' description='Button to edit an activity' />
+              </Button>}
         </Right>
       </HalfGrid>
 
