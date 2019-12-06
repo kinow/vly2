@@ -440,6 +440,10 @@ class OrgDetailForm extends Component {
                 <Divider />
               </>)
             : null}
+   {(getFieldValue('category') || []).includes(OrganisationCategory.BUSINESS)
+            ? (
+              <>
+
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
@@ -549,6 +553,8 @@ class OrgDetailForm extends Component {
               </Form.Item>
             </InputContainer>
           </FormGrid>
+          </>)
+            : null}
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
