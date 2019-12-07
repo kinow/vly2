@@ -13,9 +13,16 @@ export const FormGrid = styled.div`
 export const DescriptionContainer = styled.div`
   margin-right: 2rem;
 
+  p {
+    width: 80%;
+  }
+
   @media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio: 3) {
     /* iPhone X */
     margin: initial;
+    p {
+      width: 100%;
+    }
   }
 ` // end descriptionContainer
 

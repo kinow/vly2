@@ -143,7 +143,7 @@ class OpDetailForm extends Component {
       <span>
         <FormattedMessage
           id='opCommitment'
-          defaultMessage='Commitment'
+          defaultMessage='Commitment from volunteers'
           description='opportunity Commitment label in OpDetails Form'
         />
         &nbsp;
@@ -161,7 +161,7 @@ class OpDetailForm extends Component {
           description='opportunity Location label in OpDetails Form'
         />
         &nbsp;
-        <Tooltip title='set the region to help find local volunteers'>
+        <Tooltip title='set a region so that volunteers can find you'>
           <Icon type='question-circle-o' />
         </Tooltip>
       </span>
@@ -277,14 +277,14 @@ class OpDetailForm extends Component {
                 defaultMessage='Create'
               />
             )}{' '}
-            a request
+            an activity
           </h1>
           <h5>
             <FormattedMessage
               id='opdetail.pagesubtitle'
               description='subTitle for creating Ops'
               defaultMessage='Ask volunteers for assistance with anything related to tech - there
-                are (get number) of volunteers looking for opportunities to help out'
+                are thousands of volunteers looking for opportunities to help out'
             />
           </h5>
         </PageTitle>
@@ -293,11 +293,10 @@ class OpDetailForm extends Component {
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
-                <h3>Where and when?</h3>
+                <h3>Where and when is your activity?</h3>
               </TitleContainer>
               <p>
-                More skilled volunteers will offer to help you if you know when,
-                or where you need help.
+                More skilled volunteers will offer to help you if you know where, or when you want them to come.
               </p>
             </DescriptionContainer>
             <InputContainer>
