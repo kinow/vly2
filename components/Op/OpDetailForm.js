@@ -189,7 +189,7 @@ class OpDetailForm extends Component {
           description='opportunity Description label in OpDetails Form'
         />
         &nbsp;
-        <Tooltip title='Give a long description of what is needed and what people will be doing. You can paste HTML or Markdown here.'>
+        <Tooltip title='Tell volunteers what you want to do, what you need to make it happen, and what people will be doing. You can paste HTML or Markdown here.'>
           <Icon type='question-circle-o' />
         </Tooltip>
       </span>
@@ -366,8 +366,8 @@ class OpDetailForm extends Component {
                 <h3>Basic Info</h3>
               </TitleContainer>
               <p>
-                Before our skilled volunteers get involved, they need to know
-                how they can help. Add a title and description that tell
+                Use this form to ask for skilled volunteers to help you out. They just need to know
+                how they can help. <br/ > <br/ > Add a title and description that tell
                 volunteers how they can help you.
               </p>
             </DescriptionContainer>

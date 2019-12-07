@@ -101,7 +101,7 @@ This card will disappear when the profile is complete
     evaluation: () => { console.log('Tell us about your school'); return false }
   },
   {
-    name: 'Run Inspiring the Future',
+    name: 'Broaden horizons',
     slug: 'goal-run-itf',
     subtitle: 'Connect children and young people with volunteers from the world of work through this fun in-school activity.',
     description:
