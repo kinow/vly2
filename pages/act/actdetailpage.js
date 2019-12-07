@@ -7,11 +7,12 @@ import { FormattedMessage } from 'react-intl'
 import ActDetail from '../../components/Act/ActDetail'
 import ActDetailForm from '../../components/Act/ActDetailForm'
 import Loading from '../../components/Loading'
-import { FullPage, Spacer } from '../../components/VTheme/VTheme'
+import { FullPage, Spacer, OpSectionGrid } from '../../components/VTheme/VTheme'
 import publicPage from '../../hocs/publicPage'
 import reduxApi, { withActs, withMembers } from '../../lib/redux/reduxApi.js'
 import { Role } from '../../server/services/authorize/role'
 import { MemberStatus } from '../../server/api/member/member.constants'
+import { ShortInputContainer } from '../../components/VTheme/FormStyles'
 
 const blankAct = {
   title: '',
@@ -157,13 +158,21 @@ export class ActDetailPage extends Component {
       return (
         // if not signed in then the interested button signs in first
         isOP &&
-          <Button style={{ float: 'right' }} type='primary' shape='round' href={`/op/new?act=${act._id}`}>
+        <OpSectionGrid>
+          <div>
+          <h2>Use this template</h2>
+          <p>This will create a copy of this activity that skilled volunteers can offer to help you with</p>
+          </div>
+          <ShortInputContainer>
+          <Button type='primary' size='large' shape='round' href={`/op/new?act=${act._id}`}>
             <FormattedMessage
               id='act.createOpportunityBtn'
-              defaultMessage='Create new request from this Activity'
+              defaultMessage='Run Activity'
               description='Button to create an opportunity from an activity'
             />
           </Button>
+          </ShortInputContainer>
+          </OpSectionGrid>
       )
     }
 

@@ -293,7 +293,7 @@ class OpDetailForm extends Component {
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
-                <h3>Where and when is your activity?</h3>
+                <h3>Where and when is your activity? (Optional)</h3>
               </TitleContainer>
               <p>
                 More skilled volunteers will offer to help you if you know where, or when you want them to come.
@@ -363,7 +363,7 @@ class OpDetailForm extends Component {
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
-                <h3>What are you looking for?</h3>
+                <h3>Basic Info</h3>
               </TitleContainer>
               <p>
                 Before our skilled volunteers get involved, they need to know
@@ -422,7 +422,7 @@ class OpDetailForm extends Component {
                 <h3>Do you need any specific skills? (optional)</h3>
               </TitleContainer>
               <p>
-                Does what you're asking for fit into any specific categories
+                Are you looking for any specific skills or disciplines
                 like programming, electronics, or robots? Enter them here to
                 make it easier for volunteers to find you.
               </p>
@@ -448,15 +448,16 @@ class OpDetailForm extends Component {
                 Requests with photos get more responses. If you don't have a
                 photo leave blank and we will provide one based on the category.
               </p>
-              <img
-                style={{ width: '50%', float: 'right' }}
-                src={this.props.op.imgUrl}
-                alt='current image'
-              />
+
             </DescriptionContainer>
             <InputContainer>
               <MediumInputContainer>
                 <Form.Item label={opImgUrl}>
+                <img
+                style={{ width: '50%', float: 'left' }}
+                src={this.props.op.imgUrl}
+                alt='current image'
+              />
                   {getFieldDecorator('imgUrl', {
                     rules: []
                   })(<Input />)}
@@ -479,7 +480,10 @@ class OpDetailForm extends Component {
                 />
               </p>
             </DescriptionContainer>
+
+
             <InputContainer>
+                        
               <Button
                 id='cancelOpBtn'
                 type='secondary'
