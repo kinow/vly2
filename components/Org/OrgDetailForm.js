@@ -496,7 +496,7 @@ class OrgDetailForm extends Component {
                 <h3>How to join</h3>
               </TitleContainer>
               <p>
-                How do you want teachers and schools to get in touch with you?
+                How do you want the public to contact you?
               </p>
             </DescriptionContainer>
             <InputContainer>
