@@ -70,7 +70,7 @@ export const ActDetailPage = (props) => {
   const me = props.me
   const isOrgAdmin = false // TODO: is this person an admin for the org that person belongs to.
   const isAdmin = (me && me.role.includes(Role.ADMIN))
-  // const isOP = (me && me.role.includes(Role.OPPORTUNITY_PROVIDER))
+  const isOP = (me && me.role.includes(Role.OPPORTUNITY_PROVIDER))
 
   // get membership list for owner
   if (me &&
