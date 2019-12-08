@@ -149,6 +149,7 @@ export const ActDetailPage = (props) => {
         </ShortInputContainer>
         </OpSectionGrid>
     )
+  }
 
   if (!content) {
     if ((act && editing) || props.isNew) {
@@ -182,6 +183,7 @@ export const ActDetailPage = (props) => {
             me={props.me}
             {...props}
           />
+          {createOpportunitySection()}
           {canEdit &&
             <Button
               id='editActBtn' style={{ float: 'right' }}
