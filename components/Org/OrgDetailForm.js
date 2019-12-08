@@ -256,7 +256,7 @@ class OrgDetailForm extends Component {
               <p>
                 <FormattedMessage
                   id='orgDetail.form.category.description'
-                  defaultMessage='Let everyone know what type of organisation you are.'
+                  defaultMessage='Let everyone know what type of organisation you are.  '
                   description='Description of the type of organisation'
                 />
               </p>
