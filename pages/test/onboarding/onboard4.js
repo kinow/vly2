@@ -27,6 +27,12 @@ import {
   ItemImage
 } from '../../../components/VTheme/ItemList'
 
+const ProfileGrid = styled.div`
+display: grid;
+grid-template-columns: 48px 1fr;
+gap: 1rem;
+`
+
 const ActivityText = styled.p`
   p {
     font-size: 1.25rem;
@@ -154,6 +160,11 @@ function Page3 () {
 
             <OpSectionGrid>
               <h2>Provided by</h2>
+              <ProfileGrid>
+                <img src=''/>
+                <h3>aaaa</h3> 
+
+              </ProfileGrid>
               
             </OpSectionGrid>
           </TabPane>
