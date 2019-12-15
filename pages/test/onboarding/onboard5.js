@@ -65,7 +65,7 @@ By participating in Inspiring the Future, you can:&#13;
             <MediumInputContainer>
             <Form.Item >
               <p>Location</p>
-            <Input size="large" defaultValue='Inspiring the Future' placeholder="large size" />
+            <Input size="large" defaultValue='Whangara School, 44 Pa Road, Whangara, Gisbourne 4073' placeholder="large size" />
                 </Form.Item>
             </MediumInputContainer>
            
