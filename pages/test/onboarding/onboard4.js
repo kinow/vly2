@@ -5,7 +5,7 @@ import {
   Card,
   OpSectionGrid
 } from '../../../components/VTheme/VTheme'
-import { Button, Divider, Tabs } from 'antd'
+import { Button, Divider, Tabs, Input } from 'antd'
 import publicPage from '../../../hocs/publicPage'
 import styled from 'styled-components'
 import { ShortInputContainer } from '../../../components/VTheme/FormStyles'
@@ -26,7 +26,7 @@ import {
   EquipmentList,
   ItemImage
 } from '../../../components/VTheme/ItemList'
-
+const { TextArea } = Input
 const ProfileGrid = styled.div`
 display: grid;
 grid-template-columns: 48px 1fr;
@@ -42,6 +42,20 @@ line-height: 32px;
 align-items: center;
 }
 `
+
+
+const ButtonContainer = styled.div`
+  margin-top: 0.5rem;
+`
+
+const AskContainer = styled.div`
+  padding: 1rem;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 2px 2px 12px 0 rgba(190, 190, 190, 0.5);
+  border-radius: 8px;
+`
+
 const DownloadGrid = styled.div`
 display: grid;
 grid-template-columns:1fr 10rem;
@@ -95,11 +109,11 @@ function Page3 () {
         <ActLOL>
           <h1>Inspiring the future</h1>
           <a>
-            <p>Tertiary Education Commission</p>
+            <p>Provided by the Tertiary Education Commission</p>
           </a>
           <ItemContainer>
             <p>
-              <strong>🙋‍♀️ You will need:</strong> 5 Volunteers, 3 Items
+              <strong>🙋‍♀️ You will need:</strong> 5 Volunteers, 1 Item
               <br />
               <strong>⏱ Commitment:</strong> 2 hours
             </p>
@@ -284,7 +298,19 @@ Call or email your dedicated support person or please email css@tec.govt.nz </p>
           </TabPane>
 
           <TabPane tab={questionTab} key='2'>
-            <OpQuestion />
+          <OpSectionGrid>
+        <div>
+          <h2>Questions</h2>
+        </div>
+        <AskContainer>
+          <TextArea rows={3} placeholder='Ask a question here' />
+          <ButtonContainer>
+            <Button shape='round' size='large' type='primary'>
+              Submit
+            </Button>
+          </ButtonContainer>
+        </AskContainer>
+      </OpSectionGrid>
           </TabPane>
         </Tabs>
       </TabContainer>
