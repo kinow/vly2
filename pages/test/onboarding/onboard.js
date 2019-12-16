@@ -28,7 +28,7 @@ function Page1 () {
         <IntroContainer>
           <BigTitle>Welcome to Voluntarily!</BigTitle>
           <SubTitle>
-            You’ve been invited to Voluntarily, a volunteering platform that
+            Hiruharama School been invited to Voluntarily, a volunteering platform that
             helps you bring skilled volunteers into your school. To get
             started, tell us a bit about your school.
           </SubTitle><br/>

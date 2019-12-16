@@ -30,12 +30,12 @@ function Page1 () {
             <InputContainer>
             <ShortInputContainer>
             <Form.Item >
-              <p>Event Title</p>
-            <Input size="large" defaultValue='Whangara School' placeholder="School name goes here" />
+              <p>School Name</p>
+            <Input size="large" defaultValue=' Hiruharama School' placeholder="School name goes here" />
                 </Form.Item>
             </ShortInputContainer>
             <Form.Item >
-              <p>Event Title</p>
+              <p>About your School</p>
             <TextArea rows={4} placeholder="Write a short blurb about your school here - this is what volunteers who want to help out your school will see" />
                 </Form.Item>
             
@@ -74,17 +74,17 @@ function Page1 () {
             <ShortInputContainer>
             <Form.Item >
               <p>School Email</p>
-            <Input size="large" defaultValue='whangara@xtra.co.nz' placeholder="School Email goes here" />
+            <Input size="large" defaultValue='office@hiruharama.school.nz' placeholder="School Email goes here" />
                 </Form.Item>
 
                 <Form.Item >
               <p>School Website</p>
-            <Input size="large" defaultValue='http://www.whangara.school.nz' placeholder="School Website Goes Here" />
+            <Input size="large" defaultValue='http://www.hiruharama.school.nz' placeholder="School Website Goes Here" />
                 </Form.Item>
 
                 <Form.Item >
               <p>School Phone Number</p>
-            <Input size="large" defaultValue='06 862 2806' placeholder="School Phone Number goes here" />
+            <Input size="large" defaultValue='06 864 8701' placeholder="School Phone Number goes here" />
                 </Form.Item>
             </ShortInputContainer>
           
@@ -107,17 +107,17 @@ function Page1 () {
             <ShortInputContainer>
             <Form.Item >
               <p>School Decile</p>
-            <Input size="large" defaultValue='4' placeholder="School Email goes here" />
+            <Input size="large" defaultValue='2' placeholder="School Decile goes here" />
                 </Form.Item>
 
                 <Form.Item >
               <p>Age Range</p>
-            <Input size="large" defaultValue='4-11' placeholder="School Website Goes Here" />
+            <Input size="large" defaultValue='4 - 11' placeholder="School Website Goes Here" />
                 </Form.Item>
 
                 <Form.Item >
               <p>School Address</p>
-            <TextArea rows={4} defaultValue='Whangara School, 44 Pa Road, Whangara, Gisbourne 4073'  placeholder="School Address goes here" />
+            <TextArea rows={4} defaultValue='Hiruharama School, 45 Hiruharama Road, Waitakaro, Ruatoria, 4081'  placeholder="School Address goes here" />
                 </Form.Item>
             </ShortInputContainer>
           
