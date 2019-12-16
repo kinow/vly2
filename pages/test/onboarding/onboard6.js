@@ -100,7 +100,7 @@ function Page3 () {
             <div>
               <h4> Inspiring the future</h4>
               <p>🗓  2:00pm - 12 Feb 2020</p>
-              <p>🏫  Abbotsford School, Dunedin</p>
+              <p>🏫  Hiruharama School, Ruatoria</p>
             </div>
           </EventCard>
           <br/>
@@ -124,6 +124,15 @@ function Page3 () {
               <h5>Tell the rest of your school</h5>
               <p>
               Share this event with the rest of your school
+              </p>
+            </div>
+          </ToDoCard>
+          <ToDoCard>
+            <img src='../../static/img/demo/finalcta2.png' />
+            <div>
+              <h5>See your dashboard</h5>
+              <p>
+              See what else you can do on the Voluntarily Platform
               </p>
             </div>
           </ToDoCard>
